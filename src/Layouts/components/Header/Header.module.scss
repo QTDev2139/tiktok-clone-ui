@@ -1,0 +1,63 @@
+.wapper {
+    --border-search-radius: 92px;
+    --search-height: 46px;
+    --search-button-width: 52px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    height: var(--default-layout-header-height, 60px);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 1px;
+}
+
+.inner {
+    width: var(--default-layout-width);
+    padding-right: 24px;
+    padding-left: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.action {
+    display: flex;
+}
+
+// Menu Btn
+.menuBtn {
+    background-color: transparent;
+    margin-left: 26px;
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    background-color: var(--primary);
+    height: 2rem;
+    min-width: 2rem;
+    color: var(--white);
+    top: -20%;
+    left: 1.6rem;
+    border-radius: 1rem;
+    line-height: 1.8rem;
+    font-weight: 600;
+    padding: 0 6px;
+}
+
+.currentUser {
+    cursor: pointer;
+
+    img {
+        margin-left: 24px;
+        position: relative;
+        width: 32px;
+        height: 32px;
+        background: center center / cover no-repeat;
+        border-radius: 50%;
+    }
+}

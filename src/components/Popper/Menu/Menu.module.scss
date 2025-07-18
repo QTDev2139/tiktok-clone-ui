@@ -1,0 +1,56 @@
+// Menu Wrapper
+.menuLists {
+    background-color: var(--white);
+    width: 223px;
+
+    &.menuItem {
+        margin-left: 8px;
+    }
+
+    &.MenuBtn {
+        padding-left: 8px;
+    }
+
+    .separate {
+        width: 100%;
+        color: rgb(22, 24, 35);
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        border-top: 1px solid rgba(22, 24, 35, 0.12);
+
+        &:hover {
+            border-radius: none;
+            background: rgba(22, 24, 35, 0.05);
+        }
+    }
+}
+
+.menuBody {
+    overflow-y: auto;
+}
+
+// Header
+.header {
+    display: flex;
+    flex-shrink: 0;
+    height: 50px;
+    margin-top: -8px;
+    position: relative;
+    border: 3px;
+}
+.backBtn {
+    cursor: pointer;
+    background-color: #fff;
+    padding-left: 20px;
+    height: 100%;
+    font-size: 16px;
+}
+.headerTitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 400;
+    font-size: 20px;
+}
